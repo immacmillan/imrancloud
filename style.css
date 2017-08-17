@@ -6,7 +6,7 @@ html, body{
     text-align: center;
     font-size: 130%;
     color: #ffffff;
-    background: url("./images/Network BG2.jpeg");
+    background-image: url("./Images/Network BG2.jpeg");
     background-size: cover;
 	background-position: bottom;
     z-index: -1;   
