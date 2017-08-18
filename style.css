@@ -14,11 +14,13 @@ html, body{
     /* background: rgba(255, 255, 255, 255, .001); does fucking nothing to JPEGs */
 }
 ul {
-	list-style-type: none;
-	font-weight: bold;
-    margin: 0;
+	list-style: none outside none;
+	margin: 0;
     padding: 0;
-    overflow: hidden;
+    /*  overflow: hidden; */
+    text-align: center;
+    padding:3px;
+    font-weight: bold;
     background-color: #333;
 }
 a:link {
@@ -31,18 +33,20 @@ a:link {
 /* visited link */
 a:visited {
 	text-decoration: none;
-    color: #ff00ff;
+    color: #c0c0c0;
 }
 li {
-    float: left;
-}
+    /* float: left; */
+    display: inline;
+    margin: 0 10px; 
+    boorder: 5px solid #0000ff;
+   }
 li a {
-    display: block;
+	/* This is the box around the nav links */
+    display: inline;
     color: white;
-    text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
-}
+    }
 /* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #111;
@@ -67,15 +71,23 @@ footer {
     font-size: 50%;
 }
 
-p{
-	font-size: 60%
-	color: #ffffff;
+hr{
+	display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 3px;
+    color: white;
 }
 h2{
 	font-family: Palatino;
 	font-weight: bold;
 	font-size: 120%;
 	color: #ffffff;
+	margin-left: 200px;
+	margin-right: 200px;
 	
 }
 h3{
@@ -87,4 +99,9 @@ h4{
 	font-size: 50%
 	color: #ffffff;
 	
+}
+
+p{
+	font-size: 60%
+	color: #ffffff;
 }
